@@ -1,0 +1,1436 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20212.21.0605.1023                               -->
+<workbook original-version='18.1' source-build='2021.2.0 (20212.21.0605.1023)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='redo_new_admis_for_dash' inline='true' name='federated.04i766s16q9vbz1f8vg6o135q6qx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='redo_new_admis_for_dash' name='textscan.1q6z5f41c5fyjd183xvvm1ra6dgt'>
+            <connection class='textscan' directory='E:/NSS/Python/projects/hostpital_readmission_analysis-leptons/notebooks' filename='redo_new_admis_for_dash.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1q6z5f41c5fyjd183xvvm1ra6dgt' name='redo_new_admis_for_dash.csv' table='[redo_new_admis_for_dash#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0_x' ordinal='1' />
+            <column datatype='string' name='Encounter ID' ordinal='2' />
+            <column datatype='string' name='Patient ID_x' ordinal='3' />
+            <column datatype='string' name='Encounter Primary Payor ID_x' ordinal='4' />
+            <column datatype='string' name='Encounter Primary Plan ID_x' ordinal='5' />
+            <column datatype='string' name='Facility Provider ID_x' ordinal='6' />
+            <column datatype='string' name='Attending Provider ID_x' ordinal='7' />
+            <column datatype='integer' name='Attending Provider NPI_x' ordinal='8' />
+            <column datatype='integer' name='Facility Provider NPI_x' ordinal='9' />
+            <column datatype='date' name='Encounter Start Date_x' ordinal='10' />
+            <column datatype='date' name='Encounter End Date_x' ordinal='11' />
+            <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_x' ordinal='12' />
+            <column datatype='integer' name='Is Observation Stay Parent Encounter_x' ordinal='13' />
+            <column datatype='real' name='CMS Admit Type Code_x' ordinal='14' />
+            <column datatype='integer' name='CMS Admit Source Code_x' ordinal='15' />
+            <column datatype='integer' name='CMS Patient Discharge Status Code_x' ordinal='16' />
+            <column datatype='real' name='CMS Place of Service Code_x' ordinal='17' />
+            <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_x' ordinal='18' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_x' ordinal='19' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_x' ordinal='20' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_x' ordinal='21' />
+            <column datatype='integer' name='Primary Plan Allowed Amount_x' ordinal='22' />
+            <column datatype='real' name='Primary Plan Paid Amount_x' ordinal='23' />
+            <column datatype='real' name='Patient Paid Amount_x' ordinal='24' />
+            <column datatype='string' name='Attending Provider NPI Type' ordinal='25' />
+            <column datatype='string' name='Facility Provider NPI Type' ordinal='26' />
+            <column datatype='boolean' name='index_admis' ordinal='27' />
+            <column datatype='boolean' name='pcp_visit' ordinal='28' />
+            <column datatype='string' name='NPI_type' ordinal='29' />
+            <column datatype='boolean' name='readmission' ordinal='30' />
+            <column datatype='integer' name='Unnamed: 0_y' ordinal='31' />
+            <column datatype='string' name='Patient ID_y' ordinal='32' />
+            <column datatype='string' name='Encounter Primary Payor ID_y' ordinal='33' />
+            <column datatype='string' name='Encounter Primary Plan ID_y' ordinal='34' />
+            <column datatype='string' name='Facility Provider ID_y' ordinal='35' />
+            <column datatype='string' name='Attending Provider ID_y' ordinal='36' />
+            <column datatype='real' name='Attending Provider NPI_y' ordinal='37' />
+            <column datatype='integer' name='Facility Provider NPI_y' ordinal='38' />
+            <column datatype='date' name='Encounter Start Date_y' ordinal='39' />
+            <column datatype='date' name='Encounter End Date_y' ordinal='40' />
+            <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_y' ordinal='41' />
+            <column datatype='integer' name='Is Observation Stay Parent Encounter_y' ordinal='42' />
+            <column datatype='real' name='CMS Admit Type Code_y' ordinal='43' />
+            <column datatype='integer' name='CMS Admit Source Code_y' ordinal='44' />
+            <column datatype='integer' name='CMS Patient Discharge Status Code_y' ordinal='45' />
+            <column datatype='real' name='CMS Place of Service Code_y' ordinal='46' />
+            <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_y' ordinal='47' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_y' ordinal='48' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_y' ordinal='49' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_y' ordinal='50' />
+            <column datatype='integer' name='Primary Plan Allowed Amount_y' ordinal='51' />
+            <column datatype='real' name='Primary Plan Paid Amount_y' ordinal='52' />
+            <column datatype='real' name='Patient Paid Amount_y' ordinal='53' />
+            <column datatype='string' name='type' ordinal='54' />
+            <column datatype='boolean' name='7 day followup' ordinal='55' />
+            <column datatype='real' name='individual_npi' ordinal='56' />
+            <column datatype='real' name='group_npi' ordinal='57' />
+            <column datatype='string' name='facility_name' ordinal='58' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1q6z5f41c5fyjd183xvvm1ra6dgt' name='redo_new_admis_for_dash.csv' table='[redo_new_admis_for_dash#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Unnamed: 0_x' ordinal='1' />
+            <column datatype='string' name='Encounter ID' ordinal='2' />
+            <column datatype='string' name='Patient ID_x' ordinal='3' />
+            <column datatype='string' name='Encounter Primary Payor ID_x' ordinal='4' />
+            <column datatype='string' name='Encounter Primary Plan ID_x' ordinal='5' />
+            <column datatype='string' name='Facility Provider ID_x' ordinal='6' />
+            <column datatype='string' name='Attending Provider ID_x' ordinal='7' />
+            <column datatype='integer' name='Attending Provider NPI_x' ordinal='8' />
+            <column datatype='integer' name='Facility Provider NPI_x' ordinal='9' />
+            <column datatype='date' name='Encounter Start Date_x' ordinal='10' />
+            <column datatype='date' name='Encounter End Date_x' ordinal='11' />
+            <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_x' ordinal='12' />
+            <column datatype='integer' name='Is Observation Stay Parent Encounter_x' ordinal='13' />
+            <column datatype='real' name='CMS Admit Type Code_x' ordinal='14' />
+            <column datatype='integer' name='CMS Admit Source Code_x' ordinal='15' />
+            <column datatype='integer' name='CMS Patient Discharge Status Code_x' ordinal='16' />
+            <column datatype='real' name='CMS Place of Service Code_x' ordinal='17' />
+            <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_x' ordinal='18' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_x' ordinal='19' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_x' ordinal='20' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_x' ordinal='21' />
+            <column datatype='integer' name='Primary Plan Allowed Amount_x' ordinal='22' />
+            <column datatype='real' name='Primary Plan Paid Amount_x' ordinal='23' />
+            <column datatype='real' name='Patient Paid Amount_x' ordinal='24' />
+            <column datatype='string' name='Attending Provider NPI Type' ordinal='25' />
+            <column datatype='string' name='Facility Provider NPI Type' ordinal='26' />
+            <column datatype='boolean' name='index_admis' ordinal='27' />
+            <column datatype='boolean' name='pcp_visit' ordinal='28' />
+            <column datatype='string' name='NPI_type' ordinal='29' />
+            <column datatype='boolean' name='readmission' ordinal='30' />
+            <column datatype='integer' name='Unnamed: 0_y' ordinal='31' />
+            <column datatype='string' name='Patient ID_y' ordinal='32' />
+            <column datatype='string' name='Encounter Primary Payor ID_y' ordinal='33' />
+            <column datatype='string' name='Encounter Primary Plan ID_y' ordinal='34' />
+            <column datatype='string' name='Facility Provider ID_y' ordinal='35' />
+            <column datatype='string' name='Attending Provider ID_y' ordinal='36' />
+            <column datatype='real' name='Attending Provider NPI_y' ordinal='37' />
+            <column datatype='integer' name='Facility Provider NPI_y' ordinal='38' />
+            <column datatype='date' name='Encounter Start Date_y' ordinal='39' />
+            <column datatype='date' name='Encounter End Date_y' ordinal='40' />
+            <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_y' ordinal='41' />
+            <column datatype='integer' name='Is Observation Stay Parent Encounter_y' ordinal='42' />
+            <column datatype='real' name='CMS Admit Type Code_y' ordinal='43' />
+            <column datatype='integer' name='CMS Admit Source Code_y' ordinal='44' />
+            <column datatype='integer' name='CMS Patient Discharge Status Code_y' ordinal='45' />
+            <column datatype='real' name='CMS Place of Service Code_y' ordinal='46' />
+            <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_y' ordinal='47' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_y' ordinal='48' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_y' ordinal='49' />
+            <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_y' ordinal='50' />
+            <column datatype='integer' name='Primary Plan Allowed Amount_y' ordinal='51' />
+            <column datatype='real' name='Primary Plan Paid Amount_y' ordinal='52' />
+            <column datatype='real' name='Patient Paid Amount_y' ordinal='53' />
+            <column datatype='string' name='type' ordinal='54' />
+            <column datatype='boolean' name='7 day followup' ordinal='55' />
+            <column datatype='real' name='individual_npi' ordinal='56' />
+            <column datatype='real' name='group_npi' ordinal='57' />
+            <column datatype='string' name='facility_name' ordinal='58' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Unnamed: 0_x</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Encounter ID]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient ID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient ID_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Patient ID_x</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Primary Payor ID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Encounter Primary Payor ID_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Primary Payor ID_x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Primary Plan ID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Encounter Primary Plan ID_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Primary Plan ID_x</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Provider ID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Facility Provider ID_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Facility Provider ID_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attending Provider ID_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attending Provider ID_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Attending Provider ID_x</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attending Provider NPI_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Attending Provider NPI_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Attending Provider NPI_x</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Provider NPI_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Facility Provider NPI_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Facility Provider NPI_x</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Start Date_x</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Encounter Start Date_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Start Date_x</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter End Date_x</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Encounter End Date_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter End Date_x</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Emergency Department Visit Parent Encounter_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is Emergency Department Visit Parent Encounter_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Is Emergency Department Visit Parent Encounter_x</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Observation Stay Parent Encounter_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is Observation Stay Parent Encounter_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Is Observation Stay Parent Encounter_x</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Admit Type Code_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CMS Admit Type Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Admit Type Code_x</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Admit Source Code_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMS Admit Source Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Admit Source Code_x</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Patient Discharge Status Code_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMS Patient Discharge Status Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Patient Discharge Status Code_x</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Place of Service Code_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CMS Place of Service Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Place of Service Code_x</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-9-CM Code_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-9-CM Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-9-CM Code_x</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-9-CM Description_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-9-CM Description_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-9-CM Description_x</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-10-CM Code_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-10-CM Code_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-10-CM Code_x</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-10-CM Description_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-10-CM Description_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-10-CM Description_x</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Plan Allowed Amount_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Primary Plan Allowed Amount_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Primary Plan Allowed Amount_x</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Plan Paid Amount_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary Plan Paid Amount_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Primary Plan Paid Amount_x</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient Paid Amount_x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Patient Paid Amount_x]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Patient Paid Amount_x</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attending Provider NPI Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attending Provider NPI Type]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Attending Provider NPI Type</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Provider NPI Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Facility Provider NPI Type]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Facility Provider NPI Type</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index_admis</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[index_admis]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>index_admis</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pcp_visit</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[pcp_visit]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>pcp_visit</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NPI_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NPI_type]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>NPI_type</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmission</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[readmission]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>readmission</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 0_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Unnamed: 0_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Unnamed: 0_y</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient ID_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient ID_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Patient ID_y</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Primary Payor ID_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Encounter Primary Payor ID_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Primary Payor ID_y</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Primary Plan ID_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Encounter Primary Plan ID_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Primary Plan ID_y</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Provider ID_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Facility Provider ID_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Facility Provider ID_y</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attending Provider ID_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Attending Provider ID_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Attending Provider ID_y</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Attending Provider NPI_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Attending Provider NPI_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Attending Provider NPI_y</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Facility Provider NPI_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Facility Provider NPI_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Facility Provider NPI_y</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter Start Date_y</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Encounter Start Date_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter Start Date_y</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Encounter End Date_y</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Encounter End Date_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Encounter End Date_y</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Emergency Department Visit Parent Encounter_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is Emergency Department Visit Parent Encounter_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Is Emergency Department Visit Parent Encounter_y</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is Observation Stay Parent Encounter_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is Observation Stay Parent Encounter_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Is Observation Stay Parent Encounter_y</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Admit Type Code_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CMS Admit Type Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Admit Type Code_y</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Admit Source Code_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMS Admit Source Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Admit Source Code_y</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Patient Discharge Status Code_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CMS Patient Discharge Status Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Patient Discharge Status Code_y</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CMS Place of Service Code_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CMS Place of Service Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>CMS Place of Service Code_y</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-9-CM Code_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-9-CM Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-9-CM Code_y</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-9-CM Description_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-9-CM Description_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-9-CM Description_y</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-10-CM Code_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-10-CM Code_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-10-CM Code_y</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Principal Discharge Diagnosis ICD-10-CM Description_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Principal Discharge Diagnosis ICD-10-CM Description_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Principal Discharge Diagnosis ICD-10-CM Description_y</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Plan Allowed Amount_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Primary Plan Allowed Amount_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Primary Plan Allowed Amount_y</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Primary Plan Paid Amount_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Primary Plan Paid Amount_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Primary Plan Paid Amount_y</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient Paid Amount_y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Patient Paid Amount_y]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>Patient Paid Amount_y</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>7 day followup</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[7 day followup]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>7 day followup</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>individual_npi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[individual_npi]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>individual_npi</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>group_npi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[group_npi]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>group_npi</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>facility_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[facility_name]</local-name>
+            <parent-name>[redo_new_admis_for_dash.csv]</parent-name>
+            <remote-alias>facility_name</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='7 Day Followup' datatype='boolean' name='[7 day followup]' role='dimension' type='nominal' />
+      <column caption='Attending Provider ID x' datatype='string' name='[Attending Provider ID_x]' role='dimension' type='nominal' />
+      <column caption='Attending Provider ID y' datatype='string' name='[Attending Provider ID_y]' role='dimension' type='nominal' />
+      <column caption='Attending Provider NPI x' datatype='integer' name='[Attending Provider NPI_x]' role='measure' type='quantitative' />
+      <column caption='Attending Provider NPI y' datatype='real' name='[Attending Provider NPI_y]' role='measure' type='quantitative' />
+      <column caption='CMS Admit Source Code x' datatype='integer' name='[CMS Admit Source Code_x]' role='measure' type='quantitative' />
+      <column caption='CMS Admit Source Code y' datatype='integer' name='[CMS Admit Source Code_y]' role='measure' type='quantitative' />
+      <column caption='CMS Admit Type Code x' datatype='real' name='[CMS Admit Type Code_x]' role='measure' type='quantitative' />
+      <column caption='CMS Admit Type Code y' datatype='real' name='[CMS Admit Type Code_y]' role='measure' type='quantitative' />
+      <column caption='CMS Patient Discharge Status Code x' datatype='integer' name='[CMS Patient Discharge Status Code_x]' role='measure' type='quantitative' />
+      <column caption='CMS Patient Discharge Status Code y' datatype='integer' name='[CMS Patient Discharge Status Code_y]' role='measure' type='quantitative' />
+      <column caption='CMS Place of Service Code x' datatype='real' name='[CMS Place of Service Code_x]' role='measure' type='quantitative' />
+      <column caption='CMS Place of Service Code y' datatype='real' name='[CMS Place of Service Code_y]' role='measure' type='quantitative' />
+      <column caption='Calculation1' datatype='real' name='[Calculation_496521861159006208]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='' />
+      </column>
+      <column caption='Calculation2' datatype='real' name='[Calculation_496521861161836545]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([readmission]==TRUE)/COUNT([index_admis]==True)*100' />
+      </column>
+      <column caption='Encounter End Date x' datatype='date' name='[Encounter End Date_x]' role='dimension' type='ordinal' />
+      <column caption='Encounter End Date y' datatype='date' name='[Encounter End Date_y]' role='dimension' type='ordinal' />
+      <column caption='Encounter Primary Payor ID x' datatype='string' name='[Encounter Primary Payor ID_x]' role='dimension' type='nominal' />
+      <column caption='Encounter Primary Payor ID y' datatype='string' name='[Encounter Primary Payor ID_y]' role='dimension' type='nominal' />
+      <column caption='Encounter Primary Plan ID x' datatype='string' name='[Encounter Primary Plan ID_x]' role='dimension' type='nominal' />
+      <column caption='Encounter Primary Plan ID y' datatype='string' name='[Encounter Primary Plan ID_y]' role='dimension' type='nominal' />
+      <column caption='Encounter Start Date x' datatype='date' name='[Encounter Start Date_x]' role='dimension' type='ordinal' />
+      <column caption='Encounter Start Date y' datatype='date' name='[Encounter Start Date_y]' role='dimension' type='ordinal' />
+      <column caption='Facility Provider ID x' datatype='string' name='[Facility Provider ID_x]' role='dimension' type='nominal' />
+      <column caption='Facility Provider ID y' datatype='string' name='[Facility Provider ID_y]' role='dimension' type='nominal' />
+      <column caption='Facility Provider NPI x' datatype='integer' name='[Facility Provider NPI_x]' role='measure' type='quantitative' />
+      <column caption='Facility Provider NPI y' datatype='integer' name='[Facility Provider NPI_y]' role='measure' type='quantitative' />
+      <column caption='Is Emergency Department Visit Parent Encounter x' datatype='integer' name='[Is Emergency Department Visit Parent Encounter_x]' role='measure' type='quantitative' />
+      <column caption='Is Emergency Department Visit Parent Encounter y' datatype='integer' name='[Is Emergency Department Visit Parent Encounter_y]' role='measure' type='quantitative' />
+      <column caption='Is Observation Stay Parent Encounter x' datatype='integer' name='[Is Observation Stay Parent Encounter_x]' role='measure' type='quantitative' />
+      <column caption='Is Observation Stay Parent Encounter y' datatype='integer' name='[Is Observation Stay Parent Encounter_y]' role='measure' type='quantitative' />
+      <column caption='NPI type' datatype='string' name='[NPI_type]' role='dimension' type='nominal' />
+      <column caption='Patient ID x' datatype='string' name='[Patient ID_x]' role='dimension' type='nominal' />
+      <column caption='Patient ID y' datatype='string' name='[Patient ID_y]' role='dimension' type='nominal' />
+      <column caption='Patient Paid Amount x' datatype='real' name='[Patient Paid Amount_x]' role='measure' type='quantitative' />
+      <column caption='Patient Paid Amount y' datatype='real' name='[Patient Paid Amount_y]' role='measure' type='quantitative' />
+      <column caption='Primary Plan Allowed Amount x' datatype='integer' name='[Primary Plan Allowed Amount_x]' role='measure' type='quantitative' />
+      <column caption='Primary Plan Allowed Amount y' datatype='integer' name='[Primary Plan Allowed Amount_y]' role='measure' type='quantitative' />
+      <column caption='Primary Plan Paid Amount x' datatype='real' name='[Primary Plan Paid Amount_x]' role='measure' type='quantitative' />
+      <column caption='Primary Plan Paid Amount y' datatype='real' name='[Primary Plan Paid Amount_y]' role='measure' type='quantitative' />
+      <column caption='Principal Discharge Diagnosis ICD-10-CM Code x' datatype='string' name='[Principal Discharge Diagnosis ICD-10-CM Code_x]' role='dimension' type='nominal' />
+      <column caption='Principal Discharge Diagnosis ICD-10-CM Code y' datatype='string' name='[Principal Discharge Diagnosis ICD-10-CM Code_y]' role='dimension' type='nominal' />
+      <column caption='Principal Discharge Diagnosis ICD-10-CM Description x' datatype='string' name='[Principal Discharge Diagnosis ICD-10-CM Description_x]' role='dimension' type='nominal' />
+      <column caption='Principal Discharge Diagnosis ICD-10-CM Description y' datatype='string' name='[Principal Discharge Diagnosis ICD-10-CM Description_y]' role='dimension' type='nominal' />
+      <column caption='Principal Discharge Diagnosis ICD-9-CM Code x' datatype='real' name='[Principal Discharge Diagnosis ICD-9-CM Code_x]' role='measure' type='quantitative' />
+      <column caption='Principal Discharge Diagnosis ICD-9-CM Code y' datatype='real' name='[Principal Discharge Diagnosis ICD-9-CM Code_y]' role='measure' type='quantitative' />
+      <column caption='Principal Discharge Diagnosis ICD-9-CM Description x' datatype='string' name='[Principal Discharge Diagnosis ICD-9-CM Description_x]' role='dimension' type='nominal' />
+      <column caption='Principal Discharge Diagnosis ICD-9-CM Description y' datatype='string' name='[Principal Discharge Diagnosis ICD-9-CM Description_y]' role='dimension' type='nominal' />
+      <column caption='Unnamed: 0 x' datatype='integer' name='[Unnamed: 0_x]' role='measure' type='quantitative' />
+      <column caption='Unnamed: 0 y' datatype='integer' name='[Unnamed: 0_y]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='redo_new_admis_for_dash.csv' datatype='table' name='[__tableau_internal_object_id__].[redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD]' role='measure' type='quantitative' />
+      <column caption='Facility Name' datatype='string' name='[facility_name]' role='dimension' type='nominal' />
+      <column caption='Group Npi' datatype='real' name='[group_npi]' role='measure' type='quantitative' />
+      <column caption='Index Admis' datatype='boolean' name='[index_admis]' role='dimension' type='nominal' />
+      <column caption='Individual Npi' datatype='real' name='[individual_npi]' role='measure' type='quantitative' />
+      <column caption='Pcp Visit' datatype='boolean' name='[pcp_visit]' role='dimension' type='nominal' />
+      <column caption='Readmission' datatype='boolean' name='[readmission]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='redo_new_admis_for_dash.csv' id='redo_new_admis_for_dash.csv_55E0B10D408B43258BE4291315A56DDD'>
+            <properties context=''>
+              <relation connection='textscan.1q6z5f41c5fyjd183xvvm1ra6dgt' name='redo_new_admis_for_dash.csv' table='[redo_new_admis_for_dash#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Unnamed: 0_x' ordinal='1' />
+                  <column datatype='string' name='Encounter ID' ordinal='2' />
+                  <column datatype='string' name='Patient ID_x' ordinal='3' />
+                  <column datatype='string' name='Encounter Primary Payor ID_x' ordinal='4' />
+                  <column datatype='string' name='Encounter Primary Plan ID_x' ordinal='5' />
+                  <column datatype='string' name='Facility Provider ID_x' ordinal='6' />
+                  <column datatype='string' name='Attending Provider ID_x' ordinal='7' />
+                  <column datatype='integer' name='Attending Provider NPI_x' ordinal='8' />
+                  <column datatype='integer' name='Facility Provider NPI_x' ordinal='9' />
+                  <column datatype='date' name='Encounter Start Date_x' ordinal='10' />
+                  <column datatype='date' name='Encounter End Date_x' ordinal='11' />
+                  <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_x' ordinal='12' />
+                  <column datatype='integer' name='Is Observation Stay Parent Encounter_x' ordinal='13' />
+                  <column datatype='real' name='CMS Admit Type Code_x' ordinal='14' />
+                  <column datatype='integer' name='CMS Admit Source Code_x' ordinal='15' />
+                  <column datatype='integer' name='CMS Patient Discharge Status Code_x' ordinal='16' />
+                  <column datatype='real' name='CMS Place of Service Code_x' ordinal='17' />
+                  <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_x' ordinal='18' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_x' ordinal='19' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_x' ordinal='20' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_x' ordinal='21' />
+                  <column datatype='integer' name='Primary Plan Allowed Amount_x' ordinal='22' />
+                  <column datatype='real' name='Primary Plan Paid Amount_x' ordinal='23' />
+                  <column datatype='real' name='Patient Paid Amount_x' ordinal='24' />
+                  <column datatype='string' name='Attending Provider NPI Type' ordinal='25' />
+                  <column datatype='string' name='Facility Provider NPI Type' ordinal='26' />
+                  <column datatype='boolean' name='index_admis' ordinal='27' />
+                  <column datatype='boolean' name='pcp_visit' ordinal='28' />
+                  <column datatype='string' name='NPI_type' ordinal='29' />
+                  <column datatype='boolean' name='readmission' ordinal='30' />
+                  <column datatype='integer' name='Unnamed: 0_y' ordinal='31' />
+                  <column datatype='string' name='Patient ID_y' ordinal='32' />
+                  <column datatype='string' name='Encounter Primary Payor ID_y' ordinal='33' />
+                  <column datatype='string' name='Encounter Primary Plan ID_y' ordinal='34' />
+                  <column datatype='string' name='Facility Provider ID_y' ordinal='35' />
+                  <column datatype='string' name='Attending Provider ID_y' ordinal='36' />
+                  <column datatype='real' name='Attending Provider NPI_y' ordinal='37' />
+                  <column datatype='integer' name='Facility Provider NPI_y' ordinal='38' />
+                  <column datatype='date' name='Encounter Start Date_y' ordinal='39' />
+                  <column datatype='date' name='Encounter End Date_y' ordinal='40' />
+                  <column datatype='integer' name='Is Emergency Department Visit Parent Encounter_y' ordinal='41' />
+                  <column datatype='integer' name='Is Observation Stay Parent Encounter_y' ordinal='42' />
+                  <column datatype='real' name='CMS Admit Type Code_y' ordinal='43' />
+                  <column datatype='integer' name='CMS Admit Source Code_y' ordinal='44' />
+                  <column datatype='integer' name='CMS Patient Discharge Status Code_y' ordinal='45' />
+                  <column datatype='real' name='CMS Place of Service Code_y' ordinal='46' />
+                  <column datatype='real' name='Principal Discharge Diagnosis ICD-9-CM Code_y' ordinal='47' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-9-CM Description_y' ordinal='48' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Code_y' ordinal='49' />
+                  <column datatype='string' name='Principal Discharge Diagnosis ICD-10-CM Description_y' ordinal='50' />
+                  <column datatype='integer' name='Primary Plan Allowed Amount_y' ordinal='51' />
+                  <column datatype='real' name='Primary Plan Paid Amount_y' ordinal='52' />
+                  <column datatype='real' name='Patient Paid Amount_y' ordinal='53' />
+                  <column datatype='string' name='type' ordinal='54' />
+                  <column datatype='boolean' name='7 day followup' ordinal='55' />
+                  <column datatype='real' name='individual_npi' ordinal='56' />
+                  <column datatype='real' name='group_npi' ordinal='57' />
+                  <column datatype='string' name='facility_name' ordinal='58' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='redo_new_admis_for_dash' name='federated.04i766s16q9vbz1f8vg6o135q6qx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.04i766s16q9vbz1f8vg6o135q6qx'>
+            <column caption='Calculation2' datatype='real' name='[Calculation_496521861161836545]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([readmission]==TRUE)/COUNT([index_admis]==True)*100' />
+            </column>
+            <column caption='Encounter End Date y' datatype='date' name='[Encounter End Date_y]' role='dimension' type='ordinal' />
+            <column caption='Facility Name' datatype='string' name='[facility_name]' role='dimension' type='nominal' />
+            <column caption='Index Admis' datatype='boolean' name='[index_admis]' role='dimension' type='nominal' />
+            <column-instance column='[facility_name]' derivation='None' name='[none:facility_name:nk]' pivot='key' type='nominal' />
+            <column caption='Readmission' datatype='boolean' name='[readmission]' role='dimension' type='nominal' />
+            <column-instance column='[Encounter End Date_y]' derivation='Month-Trunc' name='[tmn:Encounter End Date_y:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_496521861161836545]' derivation='User' name='[usr:Calculation_496521861161836545:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.04i766s16q9vbz1f8vg6o135q6qx].[none:facility_name:nk]'>
+            <groupfilter function='member' level='[none:facility_name:nk]' member='&quot;3    UCSF MEDICAL CENTER&#10;Name: facility provider, dtype: object&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.04i766s16q9vbz1f8vg6o135q6qx].[none:facility_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.04i766s16q9vbz1f8vg6o135q6qx].[usr:Calculation_496521861161836545:qk]</rows>
+        <cols>[federated.04i766s16q9vbz1f8vg6o135q6qx].[tmn:Encounter End Date_y:qk]</cols>
+      </table>
+      <simple-id uuid='{E91D5E68-49D3-4F97-97C3-A779AFB1759B}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.04i766s16q9vbz1f8vg6o135q6qx].[none:facility_name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.04i766s16q9vbz1f8vg6o135q6qx].[none:facility_name:nk]</field>
+            <field>[federated.04i766s16q9vbz1f8vg6o135q6qx].[none:readmission:nk]</field>
+            <field>[federated.04i766s16q9vbz1f8vg6o135q6qx].[yr:Encounter End Date_y:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B1C7DF7D-F81C-4B7D-969C-CB4EC596E2AC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
